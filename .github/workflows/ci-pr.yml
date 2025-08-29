@@ -1,0 +1,7 @@
+name: CI - PR
+on: [pull_request]
+jobs:
+  Build:
+    uses: prashumps/roboshop-github-actions/.github/workflows/ci-pr.yml@main
+    with:
+      appType: 'nodejs'
